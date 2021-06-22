@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/weui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css" />
+		<title>订单</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="javascript:history.go(-1)" class="iconfont icon-zuojiantou back" style="left:0"></a>
+			<h1>提交认证</h1>
+		</div>
+		<div class="content">
+			<div class="header_img p15" style="height: inherit;">
+				<img src="css/images/yanzheng.png" style="width: 56px;" class="fl mr10"/>
+				<div class="fl f12">
+					<p>.填写实名认证，认证后信息无法修改</p>
+					<p>.建议使用印有银联的借记卡，减少出款失败率</p>
+					<p>.填写的银行卡信息与实名信息一致</p>
+				</div>
+				<div class="cl"></div>
+			</div>
+			<div class="weui-cells weui-cells_radio ">
+				
+				<div class="weui-cell weui-cell_access">
+					<div class="weui-cell__hd">
+						<label class="weui-label">姓名</label>
+					</div>
+					<div class="weui-cell__bd weui-cell__primary">
+						<input class="weui-input" type="text" placeholder="请输入姓名">
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_access">
+					<div class="weui-cell__hd">
+						<label class="weui-label">身份证号</label>
+					</div>
+					<div class="weui-cell__bd weui-cell__primary">
+						<input class="weui-input" type="text" placeholder="请输入身份证号">
+					</div>
+				</div>
+				<label class="weui-cell weui-check__label" for="x12">
+			        <div class="weui-cell__bd">
+			          <p>国内代理商</p>
+			        </div>
+			        <div class="weui-cell__ft">
+			          <input type="radio" name="radio1" class="weui-check" id="x12">
+			          <span class="weui-icon-checked"></span>
+			        </div>
+			      </label>
+				<label class="weui-cell weui-check__label" for="x13">
+			        <div class="weui-cell__bd">
+			          <p>海外代理商</p>
+			        </div>
+			        <div class="weui-cell__ft">
+			          <input type="radio" name="radio1" class="weui-check" id="x13" checked="checked">
+			          <span class="weui-icon-checked"></span>
+			        </div>
+			      </label>
+				<div class="weui-cell weui-cell_select weui-cell_select-after">
+					<div class="weui-cell__hd">
+						<label class="weui-label">选择省市</label>
+					</div>
+					<div class="weui-cell__bd weui-cell_primary">
+						<select class="weui-select" name="select2">
+							<option value="1">天津</option>
+							<option value="2">北京</option>
+							<option value="3">呼和浩特</option>
+							<option value="3">吉林省</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<button class="login_btn">提交认证</button>
+		</div>
+		<footer class="footer inline-box">
+			<a href="chuangke.html" class="inline_four">
+				<p><i class="iconfont icon-zuanshi f26"></i></p>
+				<p>创客中心</p>
+			</a>
+			<a href="index.html" class="inline_four">
+				<p><i class="iconfont icon-gouwuche f26"></i></p>
+				<p>云商城</p>
+			</a>
+			<a href="fenxiao.html" class="inline_four active">
+				<p><i class="iconfont icon-qun f26"></i></p>
+				<p>分销中心</p>
+			</a>
+		</footer>
+		<!--通用js-->
+		<script src="css/js/jquery-2.1.4.js"></script>
+		<script src="css/js/jquery.scrollUp.min.js"></script>
+		<script src="css/js/js.js"></script>
+		<script src="css/js/jquery-weui.min.js"></script>
+		<script src="css/js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!--通用js结束-->
+	</body>
+
+</html>

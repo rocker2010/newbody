@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/weui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css" />
+		<title>订单</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="javascript:history.go(-1)" class="iconfont icon-zuojiantou back" style="left:0"></a>
+			<h1>订单详细</h1>
+		</div>
+		<div class="content">
+			<div class="header_img p15" style="height: inherit;">
+				<img src="css/images/quxiao.png" style="width: 56px;" class="mr10 vm diib"/>
+				<div class="f12 diib vm">
+					<p class="mb2"><b class="f16">订单已经取消</b></p>
+					<p>创建时间：2018-08-29 09:05:48</p>
+				</div>
+				<div class="cl"></div>
+			</div>
+			<div class="newsList dingdan bgwh p10">
+				<div class="lh24">
+					<div class="dib ovh rel">
+						<p class="b">收货人：曹少卿<span class="f12 ml10">18566336655</span></p>
+						<p class="f12">收货地址：天津市南开区测试测试</p>
+					</div>
+				</div>
+			</div>
+			<div class="newsList dingdan ovh">
+				<ul class="">
+					<li>
+						<a href="product-view.html" class="newsListImg"><img src="images/ab5.jpg" alt=""></a>
+						<div class="pl10 ovh">
+							<a href="product-view.html" class="title">轻断食果蔬</a>
+							<p><span class="cg">这是产品分类2</span></p>
+							<p>价格：￥1600.00 × 2</p>
+						</div>
+
+					</li>
+					<li>
+						<a href="product-view.html" class="newsListImg"><img src="images/ab5.jpg" alt=""></a>
+						<div class="pl10 ovh">
+							<a href="product-view.html" class="title">轻断食果蔬</a>
+							<p><span class="cg">这是产品分类2</span></p>
+							<p>价格：￥1600.00 × 2</p>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="weui-cells weui-cells_access">
+				<a class="weui-cell" href="javascript:;">
+					<div class="weui-cell_bd weui-cell_primary">
+						<p>商品合计：</p>
+					</div>
+					<div class="weui-cell_hd">12320.34</div>
+				</a>
+				<a class="weui-cell" href="javascript:;">
+					<div class="weui-cell_bd weui-cell_primary">
+						<p>运费：</p>
+					</div>
+					<div class="weui-cell_hd">+ 20.34</div>
+				</a>
+				<a class="weui-cell" href="#menu1">
+					<div class="weui-cell_bd weui-cell_primary">
+						<p>优惠金额：</p>
+					</div>
+					<div class="weui-cell_hd">-20.34</div>
+				</a>
+			</div>
+			<div class="weui-cells weui-cells_access">
+				<a class="weui-cell" href="javascript:;">
+					<div class="weui-cell_bd weui-cell_primary">
+						<p>订单编号：45454521212</p>
+					</div>
+				</a>
+				<a class="weui-cell" href="javascript:;">
+					<div class="weui-cell_bd weui-cell_primary">
+						<p>下单时间：2018年5月6日 17:35 15</p>
+					</div>
+				</a>
+				<a class="weui-cell" href="#menu1">
+					<div class="weui-cell_bd weui-cell_primary">
+						<p>订单状态：未处理</p>
+					</div>
+				</a>
+			</div>
+			<div class="cart_tabbar">
+				<div class="cart_flex">
+
+					<div class="cart_flex_box cart_flex_1">
+						<div class="cart_tabbar_price">实付：￥980.00</div>
+					</div>
+					<div class="cart_flex_box">
+						<button class="cart_tabbar_btn" onclick="window.location.href='checkout.html'">立即支付</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer inline-box">
+			<a href="chuangke.html" class="inline_four">
+				<p><i class="iconfont icon-zuanshi f26"></i></p>
+				<p>创客中心</p>
+			</a>
+			<a href="index.html" class="inline_four">
+				<p><i class="iconfont icon-gouwuche f26"></i></p>
+				<p>云商城</p>
+			</a>
+			<a href="fenxiao.html" class="inline_four active">
+				<p><i class="iconfont icon-qun f26"></i></p>
+				<p>分销中心</p>
+			</a>
+		</footer>
+		<!--通用js-->
+		<script src="css/js/jquery-2.1.4.js"></script>
+		<script src="css/js/jquery.scrollUp.min.js"></script>
+		<script src="css/js/js.js"></script>
+		<script src="css/js/jquery-weui.min.js"></script>
+		<script src="css/js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!--通用js结束-->
+	</body>
+
+</html>

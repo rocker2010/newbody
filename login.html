@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/weui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css" />
+		<title>订单</title>
+	</head>
+
+	<body>
+		<div class="login_main">
+			<div class="login_box KeyLoginContent">
+				<img src="css/images/logo.png" class="logo" />
+				<div class="login_input"><i class="iconfont icon-yonghu abs f24"></i><input type="text" name="username" value="" placeholder="请输入您手机号"></div>
+				<div class="login_input_code"><i class="iconfont icon-mima abs f24"></i><input type="tel" value="" placeholder="请输入短信验证码"> <button>获取验证码</button></div>
+				<div class="re_password clearfix">
+					<a href="#" class="fl"><i class="iconfont icon-zuojiantou f16"></i>忘记密码</a>
+					<a href="javascript:;">随便逛逛<i class="iconfont icon-youjiantou f16"></i></a>
+				</div>
+				<button class="login_btn" onclick="window.location.href='index.html'">登录</button>
+				<button class="login_btn" onclick="window.location.href='index.html'"><i class="iconfont icon-weixin"></i> 使用微信登录</button>
+				<button class="login_btn btnbox1" onclick="window.location.href='register.html'">还没有账号？去注册</button>
+			</div>
+			<div class="login_box KeyLoginContent">
+				<img src="css/images/logo.png" class="logo" />
+				<div class="login_input"><i class="iconfont icon-wendangxiugai abs f24"></i><input type="text" name="username" value="" placeholder="请输入您的会员名/ID/邮箱地址"></div>
+				<div class="login_input_code"><i class="iconfont icon-mima abs f24"></i><input type="password" value="" placeholder="请输入密码" class="pct100"></div>
+				<div class="re_password clearfix">
+					<a href="javascript:;">密码验证登录<i class="iconfont icon-youjiantou f16"></i></a>
+				</div>
+				<div class="login_btn" onclick="window.location.href='index.html'">登录</div>
+			</div>
+		</div>
+		<div class="copyright">版权所有 © 2018 新感受 保留所有权利</div>
+		<!--通用js-->
+		<script src="css/js/jquery-2.1.4.js"></script>
+		<script src="css/js/jquery.scrollUp.min.js"></script>
+		<script src="css/js/js.js"></script>
+		<script src="css/js/jquery-weui.min.js"></script>
+		<script src="css/js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!--通用js结束-->
+	</body>
+
+</html>

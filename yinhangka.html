@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/weui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css" />
+		<title>我的银行卡</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="javascript:history.go(-1)" class="iconfont icon-zuojiantou back" style="left:0"></a>
+			<h1>我的银行卡</h1>
+		</div>
+		<div class="content">
+			<div class="bankCard">
+				<h1 class="bankName">工商银行<p>储蓄卡</p><span>手机尾号 1587</span></h1>
+				<div class="cardNum"><span>...</span><span>...</span><span>...</span><span>1166</span></div>
+			</div>
+			<div class="bankCard">
+				<h1 class="bankName">工商银行<p>储蓄卡</p><span>手机尾号 1587</span></h1>
+				<div class="cardNum"><span>...</span><span>...</span><span>...</span><span>1166</span></div>
+			</div>
+			<div class="bankCard">
+				<h1 class="bankName">工商银行<p>储蓄卡</p><span>手机尾号 1587</span></h1>
+				<div class="cardNum"><span>...</span><span>...</span><span>...</span><span>1166</span></div>
+			</div>
+			
+			<button class="login_btn" onclick="window.location.href='add_yinhangka.html'">添加银行卡</button>
+		</div>
+		<footer class="footer inline-box">
+			<a href="chuangke.html" class="inline_four">
+				<p><i class="iconfont icon-zuanshi f26"></i></p>
+				<p>创客中心</p>
+			</a>
+			<a href="index.html" class="inline_four">
+				<p><i class="iconfont icon-gouwuche f26"></i></p>
+				<p>云商城</p>
+			</a>
+			<a href="fenxiao.html" class="inline_four active">
+				<p><i class="iconfont icon-qun f26"></i></p>
+				<p>分销中心</p>
+			</a>
+		</footer>
+		<!--通用js-->
+		<script src="css/js/jquery-2.1.4.js"></script>
+		<script src="css/js/jquery.scrollUp.min.js"></script>
+		<script src="css/js/js.js"></script>
+		<script src="css/js/jquery-weui.min.js"></script>
+		<script src="css/js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!--通用js结束-->
+		<script>
+			$(document).on("click", "#show-confirm", function() {
+				$.confirm("本次将充值 300.89 元", "确认充值", function() {
+					$.toast("充值完成");
+				}, function() {
+					//取消操作
+				});
+			});
+			
+		</script>
+	</body>
+
+</html>

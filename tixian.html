@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/weui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css" />
+		<title>订单</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="javascript:history.go(-1)" class="iconfont icon-zuojiantou back" style="left:0"></a>
+			<h1>提现</h1>
+		</div>
+		<div class="content">
+			<div class="header_img">
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="header_img_box cwh f14 tc">当前余额<p class="f26"><b>64.30</b></p></div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="weui-cells">
+          <div class="weui-cell">
+            
+            <div class="weui-cell__bd">
+              <p>姓名</p>
+            </div>
+            <div class="weui-cell__ft">说明文字</div>
+          </div>
+          <div class="weui-cell">
+            
+            <div class="weui-cell__bd">
+              <p>银行卡号</p>
+            </div>
+            <div class="weui-cell__ft">说明文字</div>
+          </div><div class="weui-cell">
+            
+            <div class="weui-cell__bd">
+              <p>开户行</p>
+            </div>
+            <div class="weui-cell__ft">说明文字</div>
+          </div>
+        </div>
+			<div class="weui-cells weui-cells_form">
+			      <div class="weui-cell f18">
+			        <div class="weui-cell__hd"><label for="" class="weui-label">提现金额</label></div>
+			        <div class="weui-cell__bd">
+			          <input class="weui-input crd" type="number" pattern="[0-9]*" value="weui input error" placeholder="">
+			        </div>
+			        <div class="weui-cell__ft">
+			          <i class="weui-icon-warn"></i>
+			        </div>
+			      </div>
+			    </div>
+			<button class="login_btn" id="show-confirm">提现</button>
+		</div>
+		<footer class="footer inline-box">
+			<a href="chuangke.html" class="inline_four">
+				<p><i class="iconfont icon-zuanshi f26"></i></p>
+				<p>创客中心</p>
+			</a>
+			<a href="index.html" class="inline_four">
+				<p><i class="iconfont icon-gouwuche f26"></i></p>
+				<p>云商城</p>
+			</a>
+			<a href="fenxiao.html" class="inline_four active">
+				<p><i class="iconfont icon-qun f26"></i></p>
+				<p>分销中心</p>
+			</a>
+		</footer>
+		<!--通用js-->
+		<script src="css/js/jquery-2.1.4.js"></script>
+		<script src="css/js/jquery.scrollUp.min.js"></script>
+		<script src="css/js/js.js"></script>
+		<script src="css/js/jquery-weui.min.js"></script>
+		<script src="css/js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!--通用js结束-->
+		<script>
+			$(document).on("click", "#show-confirm", function() {
+				$.confirm("本次将充值 300.89 元", "确认充值", function() {
+					$.toast("充值完成");
+				}, function() {
+					//取消操作
+				});
+			});
+			
+		</script>
+	</body>
+
+</html>

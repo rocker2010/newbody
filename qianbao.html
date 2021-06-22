@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/weui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css" />
+		<title>订单</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="javascript:history.go(-1)" class="iconfont icon-zuojiantou back" style="left:0"></a>
+			<h1>钱包管理</h1>
+		</div>
+		<div class="content">
+			<div class="header_img">
+				<div class="">
+					<div class="diib">
+						<div class="header_img_box cwh f14">账户余额<p class="f26"><b>64.30</b></p></div>
+					</div>
+					<div class="diib fr">
+						<div class="header_img_box cwh f14 ">
+							<p class="f0 mt10"><a href="tixian.html" class="abtn bgg mr10"><i class="iconfont icon-pause"></i> 提现</a><a href="chongzhi.html" class="abtn bgg"><i class="iconfont icon-pause"></i> 充值</a></p><p class="f0 mt5"><a href="yinhangka.html" class="abtn bgg mr10"><i class="iconfont icon-card"></i> 银行卡</a><a href="jiaoyijilu.html" class="abtn bgg"><i class="iconfont icon-dinghuodan"></i> 记录</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells mt0">
+				<a class="weui-cell weui-cell_access" href="javascript:;">
+					<div class="weui-cell__bd">
+						<p class="f14">本年收益</p>
+						<p><b class="cy f20">¥23544.54</b></p>
+					</div>
+					<div class="weui-cell__ft crd"></div>
+				</a>
+
+			</div>
+			<div class="bgwh p15 mb20 bdt15">
+				<div class="title_line">商品累计收益：<b class="f22 cgr">¥23245.32</b></div>
+				<div class="f0">
+					<div class="inline_three tc f12"><span class="f24 cbl">11</span>
+						<p>分销收益</p>
+					</div>
+					<div class="inline_three tc f12 blr1"><span class="f24 cbl">45</span>
+						<p>零售收益</p>
+					</div>
+					<div class="inline_three tc f12"><span class="f24 cbl">124</span>
+						<p>零售佣金</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer class="footer inline-box">
+			<a href="chuangke.html" class="inline_four">
+				<p><i class="iconfont icon-zuanshi f26"></i></p>
+				<p>创客中心</p>
+			</a>
+			<a href="index.html" class="inline_four">
+				<p><i class="iconfont icon-gouwuche f26"></i></p>
+				<p>云商城</p>
+			</a>
+			<a href="fenxiao.html" class="inline_four active">
+				<p><i class="iconfont icon-qun f26"></i></p>
+				<p>分销中心</p>
+			</a>
+		</footer>
+		<!--通用js-->
+		<script src="css/js/jquery-2.1.4.js"></script>
+		<script src="css/js/jquery.scrollUp.min.js"></script>
+		<script src="css/js/js.js"></script>
+		<script src="css/js/jquery-weui.min.js"></script>
+		<script src="css/js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!--通用js结束-->
+		<script>
+			$(document).on("click", "#show-confirm", function() {
+				$.confirm("您确定要充值吗?", "确认删除?", function() {
+					$.toast("充值完成");
+				}, function() {
+					//取消操作
+				});
+			});
+		</script>
+	</body>
+
+</html>

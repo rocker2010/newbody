@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="css/common.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/weui.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-weui.min.css" type="text/css" />
+		<title>订单</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="javascript:history.go(-1)" class="iconfont icon-zuojiantou back" style="left:0"></a>
+			<h1>购物车</h1>
+		</div>
+		<div class="content">
+			<!--<div class="hj_null">
+				<div class="iconfont icon-gouwuche"></div>
+				<div class="mb20">当前购物车为空</div>
+				<a href="/index" class="hj_null_btn">去购买果汁</a>
+			</div>-->
+			<ul class="cart-list">
+				<li class="firstli" style="display:none">
+					<div class="img-center">
+						<img src="img/cart.png" alt="" class="coupon-null-img">
+						<h4 class="coupon-tit">购物车里空空如也，赶快去选购吧~</h4>
+						<a href="index.html" style="font-size:1.5rem;color:#ab2b2b">继续购物</a>
+					</div>
+				</li>
+				<li>
+					<div class="cart-list-l">
+						<div class="cart_tabbar_checkbox">
+							<input type="checkbox" id="checkbox_all" class="chk_1" checked=""> <label for="checkbox_all"></label></div>
+					</div>
+					<div class="cart-list-r ">
+						<a href="#" class="cart-dele"><i class="iconfont icon-shanchu"></i>删除</a>
+
+						<dl class="cart-list-rl cart-list-dl">
+							<dt class="cart-list-dt posi1"><img src="images/u48.jpg" class="cart-list-img"><a href="./product-view.html?id=92" class="a-none"></a></dt>
+							<dd class="cart-list-dd">
+								<h1 class="cart-dd-tit namewh" onclick="window.location.href='./product-view.html?id=92'">禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾</h1>
+								<p class="dd-p2">商品编号：22141</p>
+
+								<p class="cart-spec namewh"><span class="goods_price"><b>¥&nbsp;&nbsp;229.00</b></span></p>
+								<div class="size1">
+									<div class="m-selnum jia-jian">
+										<span id="min" class="jian less z-dis" style="border-right: none;">
+													<i class="hx"></i>
+												</span>
+										<div class="textWrap">
+											<input type="number" class="num-input text_box" num="6" value="6">
+										</div>
+										<span id="add" class="more jia">
+													<i class="hx"></i>
+													<i class="sx"></i>
+										</span>
+									</div>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</li>
+				<li>
+					<div class="cart-list-l">
+						<div class="cart_tabbar_checkbox">
+							<input type="checkbox" id="checkbox_all" class="chk_1" checked=""> <label for="checkbox_all"></label></div>
+					</div>
+					<div class="cart-list-r ">
+						<a href="#" class="cart-dele"><i class="iconfont icon-shanchu"></i>删除</a>
+
+						<dl class="cart-list-rl cart-list-dl">
+							<dt class="cart-list-dt posi1"><img src="images/no_pic.gif" class="cart-list-img"><a href="./product-view.html?id=92" class="a-none"></a></dt>
+							<dd class="cart-list-dd">
+								<h1 class="cart-dd-tit namewh" onclick="window.location.href='./product-view.html?id=92'">禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾</h1>
+								<p class="dd-p2">商品编号：22141</p>
+
+								<p class="cart-spec namewh"><span class="goods_price"><b>¥&nbsp;&nbsp;229.00</b></span></p>
+								<div class="size1">
+									<div class="m-selnum jia-jian">
+										<span id="min" class="jian less z-dis" style="border-right: none;">
+													<i class="hx"></i>
+												</span>
+										<div class="textWrap">
+											<input type="number" class="num-input text_box" num="6" value="6">
+										</div>
+										<span id="add" class="more jia">
+													<i class="hx"></i>
+													<i class="sx"></i>
+											</span>
+									</div>
+								</div>
+							</dd>
+						</dl>
+
+					</div>
+				</li>
+				<li>
+					<div class="cart-list-l">
+						<div class="cart_tabbar_checkbox">
+							<input type="checkbox" id="checkbox_all" class="chk_1" checked=""> <label for="checkbox_all"></label></div>
+					</div>
+					<div class="cart-list-r ">
+						<a href="#" class="cart-dele"><i class="iconfont icon-shanchu"></i>删除</a>
+						<dl class="cart-list-rl cart-list-dl">
+							<dt class="cart-list-dt posi1">
+								<img src="images/u48.jpg" class="cart-list-img">
+								<a href="./product-view.html?id=92" class="a-none"></a>
+								<p class="cart-proprice">
+								</p></dt>
+							<dd class="cart-list-dd">
+								<h1 class="cart-dd-tit namewh" onclick="window.location.href='./product-view.html?id=92'">禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾</h1>
+								<p class="dd-p2">商品编号：22141</p>
+
+								<p class="cart-spec namewh"><span class="goods_price"><b>¥&nbsp;&nbsp;229.00</b></span></p>
+								<div class="size1">
+									<div class="m-selnum jia-jian">
+										<span id="min" class="jian less z-dis" style="border-right: none;">
+													<i class="hx"></i>
+												</span>
+										<div class="textWrap">
+											<input type="number" class="num-input text_box" num="6" value="6">
+										</div>
+										<span id="add" class="more jia">
+													<i class="hx"></i>
+													<i class="sx"></i>
+												</span>
+									</div>
+								</div>
+							</dd>
+						</dl>
+
+					</div>
+				</li>
+			</ul>
+			<div class="cart_tabbar">
+				<div class="cart_flex">
+					<div class="cart_flex_box">
+						<div class="cart_tabbar_checkbox">
+							<input type="checkbox" id="checkbox_all" class="chk_1" checked> <label for="checkbox_all"></label></div>
+					</div>
+					<div class="cart_flex_box"><label for="checkbox_all">已选 2</label></div>
+					<div class="cart_flex_box cart_flex_1">
+						<div class="cart_tabbar_price">总价：￥980.00</div>
+					</div>
+					<div class="cart_flex_box">
+						<button class="cart_tabbar_btn" onclick="window.location.href='checkout.html'">去结算</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer inline-box">
+			<a href="chuangke.html" class="inline_four">
+				<p><i class="iconfont icon-zuanshi f26"></i></p>
+				<p>创客中心</p>
+			</a>
+			<a href="index.html" class="inline_four">
+				<p><i class="iconfont icon-gouwuche f26"></i></p>
+				<p>云商城</p>
+			</a>
+			<a href="fenxiao.html" class="inline_four active">
+				<p><i class="iconfont icon-qun f26"></i></p>
+				<p>分销中心</p>
+			</a>
+		</footer>
+		<!--通用js-->
+		<script src="css/js/jquery-2.1.4.js"></script>
+		<script src="css/js/jquery.scrollUp.min.js"></script>
+		<script src="css/js/js.js"></script>
+		<script src="css/js/jquery-weui.min.js"></script>
+		<script src="css/js/fastclick.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<!--通用js结束-->
+		<script>
+			var MAX = 99,
+				MIN = 1;
+			$('.jian').click(function(e) {
+				var $input = $(e.currentTarget).parent().find('.num-input');
+				var number = parseInt($input.val() || "0") - 1
+				if(number < MIN) number = MIN;
+				$input.val(number)
+			})
+			$('.jia').click(function(e) {
+				var $input = $(e.currentTarget).parent().find('.num-input');
+				var number = parseInt($input.val() || "0") + 1
+				if(number > MAX) number = MAX;
+				$input.val(number)
+			})
+		</script>
+	</body>
+
+</html>
